@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="https://www.knowivate.com/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://www.knowivate.com/favicon.ico" type="image/gif">
+	<link rel="shortcut icon" href="https://www.knowivate.com/favicon.ico">
+	<link rel="apple-touch-icon" href="https://www.knowivate.com/favicon.ico">
+	<link rel="image_src" href="https://www.knowivate.com/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+	<title>PyAudio install error in Windows - Knowivate Developers</title>
+	<meta charset="utf-8" />
+
+	<meta name="description" content="If you are getting error while installing PyAudio in Windows then you are on right article." />
+	<meta name="tags" content="Python" />
+	<meta name="tags" content="PyAudio" />
+
+
+	<style>
+		.cntnt {
+			font-size: 15px;
+			color: black;
+		}
+
+		.cntnt a {
+			color: blue;
+		}
+
+		.cntnt hr {
+			margin-bottom: 6px;
+		}
+
+		.cntnt h1 {
+			font-size: 27px;
+			font-weight: 500;
+			margin-bottom: 17px;
+		}
+
+		.cntnt h2 {
+			font-size: 21px;
+			font-weight: 500;
+			margin-bottom: 16px;
+		}
+
+		.cntnt h3 {
+			font-size: 19px;
+			font-weight: 500;
+			color: black;
+			margin-bottom: 14px;
+		}
+
+		.cntnt p {
+			font-size: 15px;
+			margin-bottom: 16px;
+		}
+
+		.cntnt pre {
+			background-color: #e3e6e8;
+			font-size: 13px;
+			padding: 12px;
+			padding-bottom: 2px;
+			border-radius: 5px;
+			margin-bottom: 16px;
+			overflow: scroll;
+			max-height: 600px;
+		}
+
+		.cntnt ol {
+			list-style-type: decimal;
+			list-style-position: outside;
+			padding-left: 19px;
+			margin-bottom: 13px;
+		}
+
+		.cntnt ul {
+			padding-left: 19px;
+			margin-bottom: 13px;
+
+		}
+
+		.cntnt code {
+			background-color: #e3e6e8;
+			font-size: 13px;
+			padding: 2px 4px;
+			border-radius: 2px;
+		}
+
+		.cntnt ::-webkit-scrollbar {
+			width: 0px;
+			height: 10px
+		}
+
+		.cntnt ::-webkit-scrollbar-track {
+			background: #e3e6e8;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		.cntnt ::-webkit-scrollbar-thumb {
+			background: #888;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="text-gray-600 body-font">
+		<div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+			<a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
+				<img class="w-36" id="logo" src="https://www.knowivate.com/static/img/logo.png" alt="Knowivate">
+				<span class="text-3xl font-bold">Developers</span>
+			</a>
+			<nav
+				class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+				<a class="mr-5 hover:text-gray-900" href="#">Products</a>
+				<a class="mr-5 hover:text-gray-900" href="#">Free resources</a>
+				<a class="mr-5 hover:text-gray-900" href="/learn">Learn</a>
+				<a class="mr-5 hover:text-gray-900" href="#">Blog</a>
+			</nav>
+		</div>
+	</header>
+
+
+<section class="text-gray-600 body-font">
+	<div class="container py-4 mx-auto items-center">
+
+		<a class="py-1 px-2 rounded bg-indigo-50 text-xs font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700"
+			href="/c/pyaudio">PyAudio</a>
+
+		<h2 class="sm:text-4xl text-3xl py-1 title-font font-medium text-gray-900">
+			<a href="/pyaudio/pyaudio-install-error-in-windows/">PyAudio install error in Windows</a>
+		</h2>
+
+		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>If you are getting error while installing PyAudio in Windows then you are on right article.</p></i></span>
+
+		
+
+		<span>By <a class="text-blue-500 hover:text-blue-700" href="/a/kheersagar-patel">Kheersagar patel</a></span>
+
+		| On <time class="text-gray-800" datetime="2021-09-29T09:51:00+05:30">Wed 29 September 2021</time>
+
+		<hr class="my-2">
+
+		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>PyAudio install error in Windows</h2>
+<hr>
+<p>First, try to install PyAudio using simple command.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">pip</span> <span class="nv">install</span> <span class="nv">PyAudio</span>
+# <span class="k">If</span> <span class="nv">installed</span> <span class="nv">successfully</span> <span class="k">then</span> <span class="nv">Congrats</span><span class="o">!</span> <span class="nv">Otherwise</span> <span class="nv">follow</span> <span class="nv">the</span> <span class="nv">steps</span> <span class="nv">given</span> <span class="nv">below</span>.
+</code></pre></div>
+
+<p>Are you getting error like this.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Collecting</span> <span class="n">pyaudio</span>
+  <span class="n">Using</span> <span class="n">cached</span> <span class="n">PyAudio</span><span class="o">-</span><span class="mf">0.2.11</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="p">(</span><span class="mi">37</span> <span class="n">kB</span><span class="p">)</span>
+<span class="n">Building</span> <span class="n">wheels</span> <span class="k">for</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">pyaudio</span>
+  <span class="n">Building</span> <span class="n">wheel</span> <span class="k">for</span> <span class="n">pyaudio</span> <span class="p">(</span><span class="n">setup</span><span class="o">.</span><span class="n">py</span><span class="p">)</span> <span class="o">...</span> <span class="n">error</span>
+  <span class="n">ERROR</span><span class="p">:</span> <span class="n">Command</span> <span class="n">errored</span> <span class="n">out</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span><span class="p">:</span>
+   <span class="n">command</span><span class="p">:</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Programs\Python\Python39\python.exe&#39;</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import io, os, sys, setuptools, tokenize; sys.argv[0] = &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;; __file__=&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;;f = getattr(tokenize, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;open&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, open)(__file__) if os.path.exists(__file__) else io.StringIO(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;from setuptools import setup; setup()&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);code = f.read().replace(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;exec&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;))&#39;</span> <span class="n">bdist_wheel</span> <span class="o">-</span><span class="n">d</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Temp\pip-wheel-lvjheee7&#39;</span>
+       <span class="n">cwd</span><span class="p">:</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">john</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">pip</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="n">hmtyi0ct</span>\<span class="n">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span>\
+  <span class="n">Complete</span> <span class="n">output</span> <span class="p">(</span><span class="mi">9</span> <span class="n">lines</span><span class="p">):</span>
+  <span class="n">running</span> <span class="n">bdist_wheel</span>
+  <span class="n">running</span> <span class="n">build</span>
+  <span class="n">running</span> <span class="n">build_py</span>
+  <span class="n">creating</span> <span class="n">build</span>
+  <span class="n">creating</span> <span class="n">build</span>\<span class="n">lib</span><span class="o">.</span><span class="n">win</span><span class="o">-</span><span class="n">amd64</span><span class="o">-</span><span class="mf">3.9</span>
+  <span class="n">copying</span> <span class="n">src</span>\<span class="n">pyaudio</span><span class="o">.</span><span class="n">py</span> <span class="o">-&gt;</span> <span class="n">build</span>\<span class="n">lib</span><span class="o">.</span><span class="n">win</span><span class="o">-</span><span class="n">amd64</span><span class="o">-</span><span class="mf">3.9</span>
+  <span class="n">running</span> <span class="n">build_ext</span>
+  <span class="n">building</span> <span class="s1">&#39;_portaudio&#39;</span> <span class="n">extension</span>
+  <span class="n">error</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">C</span><span class="o">++</span> <span class="mf">14.0</span> <span class="ow">or</span> <span class="n">greater</span> <span class="ow">is</span> <span class="n">required</span><span class="o">.</span> <span class="n">Get</span> <span class="n">it</span> <span class="k">with</span> <span class="s2">&quot;Microsoft C++ Build Tools&quot;</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">visualstudio</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">visual</span><span class="o">-</span><span class="n">cpp</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">tools</span><span class="o">/</span>
+  <span class="o">----------------------------------------</span>
+  <span class="n">ERROR</span><span class="p">:</span> <span class="n">Failed</span> <span class="n">building</span> <span class="n">wheel</span> <span class="k">for</span> <span class="n">pyaudio</span>
+  <span class="n">Running</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">clean</span> <span class="k">for</span> <span class="n">pyaudio</span>
+<span class="n">Failed</span> <span class="n">to</span> <span class="n">build</span> <span class="n">pyaudio</span>
+<span class="n">Installing</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">pyaudio</span>
+    <span class="n">Running</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="k">for</span> <span class="n">pyaudio</span> <span class="o">...</span> <span class="n">error</span>
+    <span class="n">ERROR</span><span class="p">:</span> <span class="n">Command</span> <span class="n">errored</span> <span class="n">out</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span><span class="p">:</span>
+     <span class="n">command</span><span class="p">:</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Programs\Python\Python39\python.exe&#39;</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import io, os, sys, setuptools, tokenize; sys.argv[0] = &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;; __file__=&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;;f = getattr(tokenize, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;open&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, open)(__file__) if os.path.exists(__file__) else io.StringIO(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;from setuptools import setup; setup()&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);code = f.read().replace(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;exec&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;))&#39;</span> <span class="n">install</span> <span class="o">--</span><span class="n">record</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Temp\pip-record-xpqcja3l\install-record.txt&#39;</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">version</span><span class="o">-</span><span class="n">externally</span><span class="o">-</span><span class="n">managed</span> <span class="o">--</span><span class="nb">compile</span> <span class="o">--</span><span class="n">install</span><span class="o">-</span><span class="n">headers</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Programs\Python\Python39\Include\pyaudio&#39;</span>
+         <span class="n">cwd</span><span class="p">:</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">john</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">pip</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="n">hmtyi0ct</span>\<span class="n">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span>\
+    <span class="n">Complete</span> <span class="n">output</span> <span class="p">(</span><span class="mi">9</span> <span class="n">lines</span><span class="p">):</span>
+    <span class="n">running</span> <span class="n">install</span>
+    <span class="n">running</span> <span class="n">build</span>
+    <span class="n">running</span> <span class="n">build_py</span>
+    <span class="n">creating</span> <span class="n">build</span>
+    <span class="n">creating</span> <span class="n">build</span>\<span class="n">lib</span><span class="o">.</span><span class="n">win</span><span class="o">-</span><span class="n">amd64</span><span class="o">-</span><span class="mf">3.9</span>
+    <span class="n">copying</span> <span class="n">src</span>\<span class="n">pyaudio</span><span class="o">.</span><span class="n">py</span> <span class="o">-&gt;</span> <span class="n">build</span>\<span class="n">lib</span><span class="o">.</span><span class="n">win</span><span class="o">-</span><span class="n">amd64</span><span class="o">-</span><span class="mf">3.9</span>
+    <span class="n">running</span> <span class="n">build_ext</span>
+    <span class="n">building</span> <span class="s1">&#39;_portaudio&#39;</span> <span class="n">extension</span>
+    <span class="n">error</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">C</span><span class="o">++</span> <span class="mf">14.0</span> <span class="ow">or</span> <span class="n">greater</span> <span class="ow">is</span> <span class="n">required</span><span class="o">.</span> <span class="n">Get</span> <span class="n">it</span> <span class="k">with</span> <span class="s2">&quot;Microsoft C++ Build Tools&quot;</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">visualstudio</span><span class="o">.</span><span class="n">microsoft</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">visual</span><span class="o">-</span><span class="n">cpp</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">tools</span><span class="o">/</span>
+    <span class="o">----------------------------------------</span>
+<span class="n">ERROR</span><span class="p">:</span> <span class="n">Command</span> <span class="n">errored</span> <span class="n">out</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Programs\Python\Python39\python.exe&#39;</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import io, os, sys, setuptools, tokenize; sys.argv[0] = &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;; __file__=&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">john</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Temp</span><span class="se">\\</span><span class="s1">pip-install-hmtyi0ct</span><span class="se">\\</span><span class="s1">pyaudio_1bbb947f24a948b4bf58f9934b04bd4c</span><span class="se">\\</span><span class="s1">setup.py&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;;f = getattr(tokenize, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;open&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, open)(__file__) if os.path.exists(__file__) else io.StringIO(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;from setuptools import setup; setup()&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);code = f.read().replace(&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;exec&#39;</span><span class="s2">&quot;&#39;&quot;</span><span class="s1">&#39;))&#39;</span> <span class="n">install</span> <span class="o">--</span><span class="n">record</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Temp\pip-record-xpqcja3l\install-record.txt&#39;</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">version</span><span class="o">-</span><span class="n">externally</span><span class="o">-</span><span class="n">managed</span> <span class="o">--</span><span class="nb">compile</span> <span class="o">--</span><span class="n">install</span><span class="o">-</span><span class="n">headers</span> <span class="s1">&#39;C:\Users\john\AppData\Local\Programs\Python\Python39\Include\pyaudio&#39;</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">logs</span> <span class="k">for</span> <span class="n">full</span> <span class="n">command</span> <span class="n">output</span><span class="o">.</span>
+</code></pre></div>
+
+<p><strong>Then,</strong></p>
+<ol>
+<li>Check your <code>python</code> version.</li>
+<li>Run <code>python</code> in any terminal to know your python version.</li>
+<li>You will get some kind of result: <code>Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32</code></li>
+<li>Here my python version is <code>3.9.7</code> with <code>64 bit (AMD)</code> architecture.</li>
+<li>Go to (Unofficial Windows Binaries for Python) : <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio">https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio</a></li>
+<li>Download correct version of wheel. For me it is: <code>PyAudio‑0.2.11‑cp39‑cp39‑win_amd64.whl</code> (<strong>39</strong> is <em>python version</em> &amp; <strong>amd64</strong> is <em>architecture</em>.)</li>
+<li>Open the terminal where you downloaded the Python wheel. (For example: <code>C:\Users\john\Downloads&gt;</code>)</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Instead of &quot;PyAudio‑0.2.11‑cp39‑cp39‑win_amd64.whl&quot; write your wheel name and run command.</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">PyAudio</span><span class="err">‑</span><span class="mf">0.2</span><span class="o">.</span><span class="mi">11</span><span class="err">‑</span><span class="n">cp39</span><span class="err">‑</span><span class="n">cp39</span><span class="err">‑</span><span class="n">win_amd64</span><span class="o">.</span><span class="n">whl</span>
+
+<span class="c1"># If you are getting this message, then PyAudio is Successfully installed.</span>
+<span class="n">Processing</span> <span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">john</span>\<span class="n">downloads</span>\<span class="n">pyaudio</span><span class="o">-</span><span class="mf">0.2</span><span class="o">.</span><span class="mi">11</span><span class="o">-</span><span class="n">cp39</span><span class="o">-</span><span class="n">cp39</span><span class="o">-</span><span class="n">win_amd64</span><span class="o">.</span><span class="n">whl</span>
+<span class="n">Installing</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">PyAudio</span>
+<span class="n">Successfully</span> <span class="n">installed</span> <span class="n">PyAudio</span><span class="o">-</span><span class="mf">0.2</span><span class="o">.</span><span class="mi">11</span>
+</code></pre></div></div>
+		<div>
+			<a class="py-1 px-2 rounded bg-indigo-50 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/python">Python</a>
+			<a class="py-1 px-2 rounded bg-indigo-50 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/pyaudio">PyAudio</a>
+		</div>
+
+	</div>
+</section>
+
+
+
+	<footer class="text-gray-600 body-font">
+		<div class="container py-8 mx-auto flex items-center sm:flex-row flex-col">
+			<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+				href="https://www.knowivate.com">
+				<img class="w-36" id="logo" src="https://www.knowivate.com/static/img/logo.png" alt="Knowivate">
+			</a>
+			<!-- <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+				knowivate
+				<a href="#" class="text-gray-600 ml-1" rel="noopener noreferrer"
+					target="_blank"></a>
+			</p> -->
+			<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+				<a class="text-gray-500" href="https://www.facebook.com/KnowivateOfficial/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						class="w-5 h-5" viewBox="0 0 24 24">
+						<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.twitter.com/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						class="w-5 h-5" viewBox="0 0 24 24">
+						<path
+							d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+						</path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.instagram.com/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+						<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+						<path stroke="none"
+							d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+						</path>
+						<circle cx="4" cy="4" r="2" stroke="none"></circle>
+					</svg>
+				</a>
+			</span>
+		</div>
+	</footer>
+</body>
+
+</html>

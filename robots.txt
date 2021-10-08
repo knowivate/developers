@@ -1,0 +1,9 @@
+User-agent: Knowivatebot
+Allow: /
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: http://developers.knowivate.com/sitemap.xml

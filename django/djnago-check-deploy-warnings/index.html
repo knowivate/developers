@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="https://www.knowivate.com/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://www.knowivate.com/favicon.ico" type="image/gif">
+	<link rel="shortcut icon" href="https://www.knowivate.com/favicon.ico">
+	<link rel="apple-touch-icon" href="https://www.knowivate.com/favicon.ico">
+	<link rel="image_src" href="https://www.knowivate.com/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+	<title>Django check deploy warnings - Knowivate Developers</title>
+	<meta charset="utf-8" />
+
+	<meta name="description" content="Here we'll fix warnings from the 'django check deploy' command. If you don't know why 'django check deploy' command is used. So let me tell you that it is used to make your django app secure before deploying it to the server." />
+	<meta name="tags" content="Django" />
+	<meta name="tags" content="Deploy" />
+
+
+	<style>
+		.cntnt {
+			font-size: 15px;
+			color: black;
+		}
+
+		.cntnt a {
+			color: blue;
+		}
+
+		.cntnt hr {
+			margin-bottom: 6px;
+		}
+
+		.cntnt h1 {
+			font-size: 27px;
+			font-weight: 500;
+			margin-bottom: 17px;
+		}
+
+		.cntnt h2 {
+			font-size: 21px;
+			font-weight: 500;
+			margin-bottom: 16px;
+		}
+
+		.cntnt h3 {
+			font-size: 19px;
+			font-weight: 500;
+			color: black;
+			margin-bottom: 14px;
+		}
+
+		.cntnt p {
+			font-size: 15px;
+			margin-bottom: 16px;
+		}
+
+		.cntnt pre {
+			background-color: #e3e6e8;
+			font-size: 13px;
+			padding: 12px;
+			padding-bottom: 2px;
+			border-radius: 5px;
+			margin-bottom: 16px;
+			overflow: scroll;
+			max-height: 600px;
+		}
+
+		.cntnt ol {
+			list-style-type: decimal;
+			list-style-position: outside;
+			padding-left: 19px;
+			margin-bottom: 13px;
+		}
+
+		.cntnt ul {
+			padding-left: 19px;
+			margin-bottom: 13px;
+
+		}
+
+		.cntnt code {
+			background-color: #e3e6e8;
+			font-size: 13px;
+			padding: 2px 4px;
+			border-radius: 2px;
+		}
+
+		.cntnt ::-webkit-scrollbar {
+			width: 0px;
+			height: 10px
+		}
+
+		.cntnt ::-webkit-scrollbar-track {
+			background: #e3e6e8;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		.cntnt ::-webkit-scrollbar-thumb {
+			background: #888;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="text-gray-600 body-font">
+		<div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+			<a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
+				<img class="w-36" id="logo" src="https://www.knowivate.com/static/img/logo.png" alt="Knowivate">
+				<span class="text-3xl font-bold">Developers</span>
+			</a>
+			<nav
+				class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+				<a class="mr-5 hover:text-gray-900" href="#">Products</a>
+				<a class="mr-5 hover:text-gray-900" href="#">Free resources</a>
+				<a class="mr-5 hover:text-gray-900" href="/learn">Learn</a>
+				<a class="mr-5 hover:text-gray-900" href="#">Blog</a>
+			</nav>
+		</div>
+	</header>
+
+
+<section class="text-gray-600 body-font">
+	<div class="container py-4 mx-auto items-center">
+
+		<a class="py-1 px-2 rounded bg-indigo-50 text-xs font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700"
+			href="/c/django">Django</a>
+
+		<h2 class="sm:text-4xl text-3xl py-1 title-font font-medium text-gray-900">
+			<a href="/django/djnago-check-deploy-warnings/">Django check deploy warnings</a>
+		</h2>
+
+		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>Here we'll fix warnings from the "django check deploy" command. If you don't know why "django check deploy" command is used. So let me tell you that it is used to make your django app secure before deploying it to the server.</p></i></span>
+
+		
+
+		<span>By <a class="text-blue-500 hover:text-blue-700" href="/a/kheersagar-patel">Kheersagar patel</a></span>
+
+		| On <time class="text-gray-800" datetime="2021-09-30T12:19:00+05:30">Thu 30 September 2021</time>
+
+		<hr class="my-2">
+
+		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>Django check deploy warnings</h2>
+<hr>
+<p>First we will run this command.</p>
+<div class="highlight"><pre><span></span><code># <span class="k">While</span> <span class="nv">running</span> <span class="nv">this</span> <span class="nv">command</span> <span class="nv">note</span> <span class="nv">that</span> <span class="nv">you</span> <span class="nv">are</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">root</span> <span class="nv">folder</span> <span class="nv">of</span> <span class="nv">your</span> <span class="nv">project</span>.
+$ <span class="nv">python</span> <span class="nv">manage</span>.<span class="nv">py</span> <span class="nv">check</span> <span class="o">--</span><span class="nv">deploy</span>
+</code></pre></div>
+
+<p>Do you see warnings like these</p>
+<div class="highlight"><pre><span></span><code><span class="n">WARNINGS</span><span class="p">:</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W004</span><span class="p">)</span> <span class="n">You</span> <span class="n">have</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">a</span> <span class="n">value</span> <span class="k">for</span> <span class="n">the</span> <span class="n">SECURE_HSTS_SECONDS</span> <span class="n">setting</span><span class="o">.</span> <span class="n">If</span> <span class="n">your</span> <span class="n">entire</span> <span class="n">site</span> <span class="k">is</span> <span class="n">served</span> <span class="n">only</span> <span class="n">over</span> <span class="n">SSL</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">want</span> <span class="n">to</span> <span class="n">consider</span> <span class="n">setting</span> <span class="n">a</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">enabling</span> <span class="n">HTTP</span> <span class="n">Strict</span> <span class="n">Transport</span> <span class="n">Security</span><span class="o">.</span> <span class="n">Be</span> <span class="n">sure</span> <span class="n">to</span> <span class="n">read</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">first</span><span class="p">;</span> <span class="n">enabling</span> <span class="n">HSTS</span> <span class="n">carelessly</span> <span class="n">can</span> <span class="n">cause</span> <span class="n">serious</span><span class="p">,</span> <span class="n">irreversible</span> <span class="n">problems</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W005</span><span class="p">)</span> <span class="n">You</span> <span class="n">have</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">the</span> <span class="n">SECURE_HSTS_INCLUDE_SUBDOMAINS</span> <span class="n">setting</span> <span class="n">to</span> <span class="n">True</span><span class="o">.</span> <span class="n">Without</span> <span class="n">this</span><span class="p">,</span> <span class="n">your</span> <span class="n">site</span> <span class="k">is</span> <span class="n">potentially</span> <span class="n">vulnerable</span> <span class="n">to</span> <span class="n">attack</span> <span class="n">via</span> <span class="n">an</span> <span class="n">insecure</span> <span class="n">connection</span> <span class="n">to</span> <span class="n">a</span> <span class="n">subdomain</span><span class="o">.</span> <span class="n">Only</span> <span class="n">set</span> <span class="n">this</span> <span class="n">to</span> <span class="n">True</span> <span class="k">if</span> <span class="n">you</span> <span class="n">are</span> <span class="n">certain</span> <span class="n">that</span> <span class="n">all</span> <span class="n">subdomains</span> <span class="n">of</span> <span class="n">your</span> <span class="n">domain</span> <span class="n">should</span> <span class="n">be</span> <span class="n">served</span> <span class="n">exclusively</span> <span class="n">via</span> <span class="n">SSL</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W008</span><span class="p">)</span> <span class="n">Your</span> <span class="n">SECURE_SSL_REDIRECT</span> <span class="n">setting</span> <span class="k">is</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">to</span> <span class="n">True</span><span class="o">.</span> <span class="n">Unless</span> <span class="n">your</span> <span class="n">site</span> <span class="n">should</span> <span class="n">be</span> <span class="n">available</span> <span class="n">over</span> <span class="n">both</span> <span class="n">SSL</span> <span class="ow">and</span> <span class="n">non</span><span class="o">-</span><span class="n">SSL</span> <span class="n">connections</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">want</span> <span class="n">to</span> <span class="n">either</span> <span class="n">set</span> <span class="n">this</span> <span class="n">setting</span> <span class="n">True</span> <span class="ow">or</span> <span class="n">configure</span> <span class="n">a</span> <span class="nb">load</span> <span class="n">balancer</span> <span class="ow">or</span> <span class="n">reverse</span><span class="o">-</span><span class="n">proxy</span> <span class="n">server</span> <span class="n">to</span> <span class="n">redirect</span> <span class="n">all</span> <span class="n">connections</span> <span class="n">to</span> <span class="n">HTTPS</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W012</span><span class="p">)</span> <span class="n">SESSION_COOKIE_SECURE</span> <span class="k">is</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">to</span> <span class="n">True</span><span class="o">.</span> <span class="n">Using</span> <span class="n">a</span> <span class="n">secure</span><span class="o">-</span><span class="n">only</span> <span class="n">session</span> <span class="n">cookie</span> <span class="n">makes</span> <span class="n">it</span> <span class="n">more</span> <span class="n">difficult</span> <span class="k">for</span> <span class="n">network</span> <span class="n">traffic</span> <span class="n">sniffers</span> <span class="n">to</span> <span class="n">hijack</span> <span class="n">user</span> <span class="n">sessions</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W016</span><span class="p">)</span> <span class="n">You</span> <span class="n">have</span> <span class="s1">&#39;django.middleware.csrf.CsrfViewMiddleware&#39;</span> <span class="ow">in</span> <span class="n">your</span> <span class="n">MIDDLEWARE</span><span class="p">,</span> <span class="n">but</span> <span class="n">you</span> <span class="n">have</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">CSRF_COOKIE_SECURE</span> <span class="n">to</span> <span class="n">True</span><span class="o">.</span> <span class="n">Using</span> <span class="n">a</span> <span class="n">secure</span><span class="o">-</span><span class="n">only</span> <span class="n">CSRF</span> <span class="n">cookie</span> <span class="n">makes</span> <span class="n">it</span> <span class="n">more</span> <span class="n">difficult</span> <span class="k">for</span> <span class="n">network</span> <span class="n">traffic</span> <span class="n">sniffers</span> <span class="n">to</span> <span class="n">steal</span> <span class="n">the</span> <span class="n">CSRF</span> <span class="n">token</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W018</span><span class="p">)</span> <span class="n">You</span> <span class="n">should</span> <span class="ow">not</span> <span class="n">have</span> <span class="n">DEBUG</span> <span class="n">set</span> <span class="n">to</span> <span class="n">True</span> <span class="ow">in</span> <span class="n">deployment</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W020</span><span class="p">)</span> <span class="n">ALLOWED_HOSTS</span> <span class="n">must</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">empty</span> <span class="ow">in</span> <span class="n">deployment</span><span class="o">.</span>
+<span class="err">?</span><span class="p">:</span> <span class="p">(</span><span class="n">security</span><span class="o">.</span><span class="n">W021</span><span class="p">)</span> <span class="n">You</span> <span class="n">have</span> <span class="ow">not</span> <span class="n">set</span> <span class="n">the</span> <span class="n">SECURE_HSTS_PRELOAD</span> <span class="n">setting</span> <span class="n">to</span> <span class="n">True</span><span class="o">.</span> <span class="n">Without</span> <span class="n">this</span><span class="p">,</span> <span class="n">your</span> <span class="n">site</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">submitted</span> <span class="n">to</span> <span class="n">the</span> <span class="n">browser</span> <span class="nb">preload</span> <span class="n">list</span><span class="o">.</span>
+</code></pre></div>
+
+<p>Now, open your <code>settings.py</code> and fix each warning with the help of below code.</p>
+<div class="highlight"><pre><span></span><code># security.W004
+SECURE_HSTS_SECONDS = 31536000 # One year in seconds
+# security.W005
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# security.W008
+SECURE_SSL_REDIRECT = True
+# security.W012 
+SESSION_COOKIE_SECURE = True
+# security.W016   
+CSRF_COOKIE_SECURE = True
+# security.W018
+DEBUG = False
+# security.W020
+# Use your hostname instead of www.example.com
+ALLOWED_HOSTS = [&quot;www.example.com&quot;]
+# security.W021
+SECURE_HSTS_PRELOAD = True
+# Extra security
+SECURE_CONTENT_TYPE_NOSNIFF = True
+</code></pre></div>
+
+<p>In short,</p>
+<div class="highlight"><pre><span></span><code># You can copy the below code
+SECURE_HSTS_SECONDS = 31536000 # One year in seconds
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+DEBUG = False
+ALLOWED_HOSTS = [&quot;www.example.com&quot;]
+SECURE_HSTS_PRELOAD = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+</code></pre></div>
+
+<p>Django docs: <a href="https://docs.djangoproject.com/en/3.2/ref/checks/#security">https://docs.djangoproject.com/en/3.2/ref/checks/#security</a></p></div>
+		<div>
+			<a class="py-1 px-2 rounded bg-indigo-50 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/django">Django</a>
+			<a class="py-1 px-2 rounded bg-indigo-50 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/deploy">Deploy</a>
+		</div>
+
+	</div>
+</section>
+
+
+
+	<footer class="text-gray-600 body-font">
+		<div class="container py-8 mx-auto flex items-center sm:flex-row flex-col">
+			<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+				href="https://www.knowivate.com">
+				<img class="w-36" id="logo" src="https://www.knowivate.com/static/img/logo.png" alt="Knowivate">
+			</a>
+			<!-- <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+				knowivate
+				<a href="#" class="text-gray-600 ml-1" rel="noopener noreferrer"
+					target="_blank"></a>
+			</p> -->
+			<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+				<a class="text-gray-500" href="https://www.facebook.com/KnowivateOfficial/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						class="w-5 h-5" viewBox="0 0 24 24">
+						<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.twitter.com/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						class="w-5 h-5" viewBox="0 0 24 24">
+						<path
+							d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+						</path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.instagram.com/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+						<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+					</svg>
+				</a>
+				<a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/knowivate/"
+					rel="noopener noreferrer nofollow" target="_blank">
+					<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+						<path stroke="none"
+							d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+						</path>
+						<circle cx="4" cy="4" r="2" stroke="none"></circle>
+					</svg>
+				</a>
+			</span>
+		</div>
+	</footer>
+</body>
+
+</html>
