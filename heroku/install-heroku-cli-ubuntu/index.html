@@ -12,12 +12,14 @@
 	<link rel="apple-touch-icon" href="https://www.knowivate.com/favicon.ico">
 	<link rel="image_src" href="https://www.knowivate.com/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-	<title>No module named 'pip' - Knowivate Developers</title>
+	<title>Install heroku cli in ubuntu - Knowivate Developers</title>
 	<meta charset="utf-8" />
 
-	<meta name="description" content="If you are getting this error: No module named 'pip' then you are in the right article." />
-	<meta name="tags" content="Python" />
-	<meta name="tags" content="Pip" />
+	<meta name="description" content="How to Install Heroku Cli in Ubuntu OS. It is very easy, you just have to run a command, just after that it will be installed." />
+	<meta name="tags" content="Heroku" />
+	<meta name="tags" content="Ubuntu" />
+	<meta name="tags" content="Linux" />
+	<meta name="tags" content="Install" />
 
 
 	<style>
@@ -129,38 +131,42 @@
 	<div class="container py-4 mx-auto items-center">
 
 		<a class="py-1 px-2 rounded bg-indigo-100 text-xs font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700"
-			href="/c/no-module-named">No module named</a>
+			href="/c/heroku">Heroku</a>
 
 		<h2 class="sm:text-4xl text-3xl py-1 title-font font-medium text-gray-900">
-			<a href="/no-module-named/no-module-named-pip/">No module named 'pip'</a>
+			<a href="/heroku/install-heroku-cli-ubuntu/">Install heroku cli in ubuntu</a>
 		</h2>
 
-		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>If you are getting this error: "No module named 'pip' " then you are in the right article.</p></i></span>
+		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>How to Install Heroku Cli in Ubuntu OS. It is very easy, you just have to run a command, just after that it will be installed.</p></i></span>
 
 		
 
 		<span>By <a class="text-blue-500 hover:text-blue-700" href="/a/kheersagar-patel">Kheersagar patel</a></span>
 
-		| Last Update: <time class="text-gray-800" datetime="2021-09-28T15:52:00+05:30">Tue 28 September 2021</time>
+		| On <time class="text-gray-800" datetime="2021-10-09T14:19:00+05:30">Sat 09 October 2021</time>
 
 		<hr class="my-2">
 
-		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>No module named 'pip'</h2>
-<p>It is possible that <code>pip</code> does not get installed by default. First check if pip is installed.</p>
-<div class="highlight"><pre><span></span><code># <span class="nv">This</span> <span class="nv">command</span> <span class="nv">will</span> <span class="nv">check</span> <span class="nv">whether</span> <span class="nv">pip</span> <span class="nv">is</span> <span class="nv">installed</span> <span class="nv">or</span> <span class="nv">not</span>. <span class="k">If</span> <span class="nv">not</span>, <span class="nv">it</span> <span class="nv">will</span> <span class="nv">install</span> <span class="nv">automatically</span>.
-<span class="nv">python</span> <span class="o">-</span><span class="nv">m</span> <span class="nv">ensurepip</span> <span class="o">--</span><span class="nv">default</span><span class="o">-</span><span class="nv">pip</span>
+		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>Install Heroku CLI in Ubuntu</h2>
+<p>Here we will install heroku cli in ubuntu with the help of commands.</p>
+<div class="highlight"><pre><span></span><code># <span class="nv">Copy</span> <span class="nv">this</span> <span class="nv">command</span> <span class="nv">and</span> <span class="k">then</span> <span class="nv">run</span> <span class="nv">it</span> <span class="nv">in</span> <span class="nv">your</span> <span class="nv">Terminal</span>.
+$ <span class="nv">sudo</span> <span class="nv">snap</span> <span class="nv">install</span> <span class="o">--</span><span class="nv">classic</span> <span class="nv">heroku</span>
 </code></pre></div>
 
-<p>If it doesn't work try this</p>
-<div class="highlight"><pre><span></span><code># <span class="nv">Use</span> <span class="nv">this</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">install</span> <span class="nv">pip</span>
-<span class="nv">python</span> <span class="nv">get</span><span class="o">-</span><span class="nv">pip</span>.<span class="nv">py</span>
+<p>Now verify that the heroku cli is installed.</p>
+<div class="highlight"><pre><span></span><code># <span class="nv">Use</span> <span class="nv">this</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">check</span> <span class="nv">heroku</span> <span class="nv">cli</span> <span class="nv">version</span>
+$ <span class="nv">heroku</span> <span class="o">--</span><span class="nv">version</span>
 
-# <span class="k">If</span> <span class="nv">you</span> <span class="nv">are</span> <span class="nv">using</span> <span class="nv">another</span> <span class="nv">package</span> <span class="nv">manager</span> <span class="k">then</span> <span class="nv">use</span> <span class="nv">this</span>
-<span class="nv">python</span> <span class="nv">get</span><span class="o">-</span><span class="nv">pip</span>.<span class="nv">py</span> <span class="o">--</span><span class="nv">prefix</span><span class="o">=/</span><span class="nv">usr</span><span class="o">/</span><span class="nv">local</span><span class="o">/</span>
-</code></pre></div></div>
+<span class="k">If</span> <span class="nv">you</span> <span class="nv">get</span> <span class="nb">result</span> <span class="nv">like</span> <span class="nv">this</span> <span class="nv">it</span> <span class="nv">means</span> <span class="nv">heroku</span> <span class="nv">has</span> <span class="nv">been</span> <span class="nv">successfully</span> <span class="nv">installed</span> <span class="nv">in</span> <span class="nv">your</span> <span class="nv">system</span>.
+<span class="nv">heroku</span><span class="o">/</span><span class="mi">7</span>.<span class="mi">59</span>.<span class="mi">0</span> <span class="nv">linux</span><span class="o">-</span><span class="nv">x64</span> <span class="nv">node</span><span class="o">-</span><span class="nv">v12</span>.<span class="mi">21</span>.<span class="mi">0</span>
+</code></pre></div>
+
+<p>Heroku Dev Center: <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">https://devcenter.heroku.com/articles/heroku-cli#download-and-install</a></p></div>
 		<div>
-			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/python">Python</a>
-			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/pip">Pip</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/heroku">Heroku</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/ubuntu">Ubuntu</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/linux">Linux</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/install">Install</a>
 		</div>
 
 	</div>
