@@ -1,79 +1,111 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://developers.knowivate.com/</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/learn</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://developers.knowivate.com/c/django</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <loc>https://developers.knowivate.com/c/heroku</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://developers.knowivate.com/django/djnago-check-deploy-warnings/</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <loc>https://developers.knowivate.com/heroku/install-heroku-cli-ubuntu/</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/a/kheersagar-patel</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/c/django</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/django/djnago-check-deploy-warnings/</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/pyaudio</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/pyaudio/pyaudio-install-error-in-windows/</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/no-module-named</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/no-module-named/no-module-named-pip/</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://developers.knowivate.com/t/heroku</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/ubuntu</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/linux</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/install</loc>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://developers.knowivate.com/t/django</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/deploy</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/python</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/pyaudio</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/pip</loc>
-  <lastmod>2021-10-02T09:06:24+00:00</lastmod>
+  <lastmod>2021-10-09T08:50:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
