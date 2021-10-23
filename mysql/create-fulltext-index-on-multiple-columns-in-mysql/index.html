@@ -12,8 +12,12 @@
 	<link rel="apple-touch-icon" href="https://www.knowivate.com/favicon.ico">
 	<link rel="image_src" href="https://www.knowivate.com/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-	<title>Knowivate Developers - Authors</title>
+	<title>Create FULLTEXT index on multiple columns in MySQL? - Knowivate Developers</title>
 	<meta charset="utf-8" />
+
+	<meta name="description" content="Here we will create FULLTEXT index in MySQL." />
+	<meta name="tags" content="MySQL" />
+	<meta name="tags" content="FULLTEXT" />
 
 
 	<style>
@@ -120,10 +124,49 @@
 		</div>
 	</header>
 
-    <h1>Authors on Knowivate Developers</h1>
-    <ul>
-        <li><a href="/a/kheersagar-patel">Kheersagar patel</a> (5)</li>
-    </ul>
+
+<section class="text-gray-600 body-font">
+	<div class="container py-4 mx-auto items-center">
+
+		<a class="py-1 px-2 rounded bg-indigo-100 text-xs font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700"
+			href="/c/mysql">MySQL</a>
+
+		<h2 class="sm:text-4xl text-3xl py-1 title-font font-medium text-gray-900">
+			<a href="/mysql/create-fulltext-index-on-multiple-columns-in-mysql/">Create FULLTEXT index on multiple columns in MySQL?</a>
+		</h2>
+
+		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>Here we will create FULLTEXT index in MySQL.</p></i></span>
+
+		
+
+		<span>By <a class="text-blue-500 hover:text-blue-700" href="/a/kheersagar-patel">Kheersagar patel</a></span>
+
+		| On <time class="text-gray-800" datetime="2021-10-23T20:38:00+05:30">Sat 23 October 2021</time>
+
+		<hr class="my-2">
+
+		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>Create FULLTEXT index on multiple columns in MySQL?</h2>
+<hr>
+<p>Here we will create FULLTEXT index of three columns.</p>
+<div class="highlight"><pre><span></span><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n n-Quoted">`database_name`</span><span class="p">.</span><span class="n n-Quoted">`table_name`</span> <span class="k">ADD</span> <span class="k">FULLTEXT</span> <span class="p">(</span><span class="n n-Quoted">`column1`</span><span class="p">,</span> <span class="n n-Quoted">`column2`</span><span class="p">,</span> <span class="n n-Quoted">`column3`</span><span class="p">);</span>
+
+<span class="c1"># Here</span>
+<span class="c1"># `database_name` = The name of your database.</span>
+<span class="c1"># `table_name` = The name of your table.</span>
+
+<span class="c1"># column1 = Name of column.</span>
+<span class="c1"># column2 = Name of column.</span>
+<span class="c1"># column3 = Name of column.</span>
+</code></pre></div></div>
+		<div>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/mysql">MySQL</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/fulltext">FULLTEXT</a>
+		</div>
+
+	</div>
+</section>
+
+
 
 	<footer class="text-gray-600 body-font">
 		<div class="container py-8 mx-auto flex items-center sm:flex-row flex-col">
