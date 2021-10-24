@@ -12,12 +12,12 @@
 	<link rel="apple-touch-icon" href="https://www.knowivate.com/favicon.ico">
 	<link rel="image_src" href="https://www.knowivate.com/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-	<title>Create FULLTEXT index on multiple columns in MySQL - Knowivate Developers</title>
+	<title>See all indexes in MySQL - Knowivate Developers</title>
 	<meta charset="utf-8" />
 
-	<meta name="description" content="Here we will create FULLTEXT index in MySQL." />
+	<meta name="description" content="How to see all indexes in MySQL?" />
 	<meta name="tags" content="MySQL" />
-	<meta name="tags" content="FULLTEXT" />
+	<meta name="tags" content="INDEX" />
 
 
 	<style>
@@ -132,36 +132,31 @@
 			href="/c/mysql">MySQL</a>
 
 		<h2 class="sm:text-4xl text-3xl py-1 title-font font-medium text-gray-900">
-			<a href="/mysql/create-fulltext-index-on-multiple-columns-in-mysql/">Create FULLTEXT index on multiple columns in MySQL</a>
+			<a href="/mysql/see-all-indexes-in-mysql/">See all indexes in MySQL</a>
 		</h2>
 
-		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>Here we will create FULLTEXT index in MySQL.</p></i></span>
+		<span class="sm:text-lg text-base py-1 font-small text-gray-400"><i><p>How to see all indexes in MySQL?</p></i></span>
 
 		
 
 		<span>By <a class="text-blue-500 hover:text-blue-700" href="/a/kheersagar-patel">Kheersagar patel</a></span>
 
-		| Last Update: <time class="text-gray-800" datetime="2021-10-24T19:32:00+05:30">Sun 24 October 2021</time>
+		| On <time class="text-gray-800" datetime="2021-10-24T19:34:00+05:30">Sun 24 October 2021</time>
 
 		<hr class="my-2">
 
-		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>Create FULLTEXT index on multiple columns in MySQL</h2>
+		<div class="leading-relaxed mb-4 py-2 cntnt"><h2>See all indexes in MySQL</h2>
 <hr>
-<p>For example here we will create <code>FULLTEXT</code> index of three columns.</p>
-<div class="highlight"><pre><span></span><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n n-Quoted">`database_name`</span><span class="p">.</span><span class="n n-Quoted">`table_name`</span> <span class="k">ADD</span> <span class="k">FULLTEXT</span> <span class="p">(</span><span class="n n-Quoted">`column1`</span><span class="p">,</span> <span class="n n-Quoted">`column2`</span><span class="p">,</span> <span class="n n-Quoted">`column3`</span><span class="p">);</span>
+<p>Here we will see all indexes in <code>MySQL</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">SHOW</span> <span class="k">INDEX</span> <span class="k">FROM</span> <span class="n n-Quoted">`table_name`</span><span class="p">;</span>
 </code></pre></div>
 
 <h3>Here assuming:</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># `database_name` = The name of your database.</span>
-<span class="c1"># `table_name` = The name of your table.</span>
-
-<span class="c1"># column1 = Name of column.</span>
-<span class="c1"># column2 = Name of column.</span>
-<span class="c1"># column3 = Name of column.</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># `table_name` = The name of your table.</span>
 </code></pre></div></div>
 		<div>
 			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/mysql">MySQL</a>
-			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/fulltext">FULLTEXT</a>
+			<a class="py-1 px-2 rounded bg-indigo-100 text-sm font-medium tracking-widest text-indigo-500 hover:text-white hover:bg-indigo-700" href="/t/index">INDEX</a>
 		</div>
 
 	</div>
