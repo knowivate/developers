@@ -3,152 +3,187 @@
 
 <url>
   <loc>https://developers.knowivate.com/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/learn</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://developers.knowivate.com/c/venv</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <loc>https://developers.knowivate.com/c/mongodb</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://developers.knowivate.com/venv/simple-way-to-create-python-virtual-environment-using-venv-on-ubuntu/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <loc>https://developers.knowivate.com/mongodb/insert-a-document-in-mongo-database/</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/a/kheersagar-patel</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/mongodb/drop-a-collection-in-mongo-database/</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/c/venv</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/venv/simple-way-to-create-python-virtual-environment-using-venv-on-ubuntu/</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/mysql</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/mysql/see-all-indexes-in-mysql/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/mysql/create-fulltext-index-on-multiple-columns-in-mysql/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/heroku</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/heroku/install-heroku-cli-ubuntu/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/django</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/django/djnago-check-deploy-warnings/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/pyaudio</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/pyaudio/pyaudio-install-error-in-windows/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/c/no-module-named</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/no-module-named/no-module-named-pip/</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://developers.knowivate.com/t/mongodb</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/database</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/insertion</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://developers.knowivate.com/t/drop</loc>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://developers.knowivate.com/t/venv</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/virtualenv</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/python</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/mysql</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/index</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/fulltext</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/heroku</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/ubuntu</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/linux</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/install</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/django</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/deploy</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/pyaudio</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://developers.knowivate.com/t/pip</loc>
-  <lastmod>2021-11-15T15:52:32+00:00</lastmod>
+  <lastmod>2021-11-22T17:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
